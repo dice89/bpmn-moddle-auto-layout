@@ -23,7 +23,11 @@ var xmlWithoutDi = '<?xml version="1.0" encoding="UTF-8"?>' +
 
 var autoLayout = new AutoLayout();
 
-autoLayout.layoutProcess(xmlWithoutDi);
+
+
+autoLayout.layoutProcess(xmlWithoutDi,function(err,xml){
+  console.log(xml)
+});
 ```
 
 
